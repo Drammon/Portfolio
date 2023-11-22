@@ -11,7 +11,7 @@
     --color-darkgolden:#d1a664;
     --color-lightgolden: #c9c987;
     --color-black: #000;
-    --color-white: #ffe7bf;
+    --color-white: #fff8ed;
 }
 .dark-theme {
 
@@ -32,6 +32,49 @@ html{
 body {
 
     font-family: 'Poppins', sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+
+    background: transparent;
+    z-index: 2;
+}
+.header-title{
+    text-decoration: none;
+
+}
+.header-title h1{
+    color: var(--color-golden);
+    font-size: 2rem;
+    transition: opacity .3 ease;
+}
+.header-title h1:hover{
+    opacity: .8;
+}
+.navbar{
+    max-width: 350px;
+    width: 100%;
+
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: var(--color-golden);
+    font-weight: 700;
 }
 #person{
     height: 100vh;
@@ -68,6 +111,7 @@ body {
 
     animation: written_text.5s ease forwards;
 }
+
 .person-content div h1:nth-child(1) {
     animation-delay: 1s;
  
@@ -76,11 +120,13 @@ body {
    animation-delay: 2s;
 
 }
-.person-content div h1:nth-child(3) {
+.person-content div h1:nth-child(3) a {
     
+    
+    text-decoration: none;
     animation: written_text_name .5s ease forwards;
     animation-delay: 3s;
-    transition: transform .3s ease
+    transition: transform .3s ease;
  }
 
  .person-content div h1 span {
@@ -130,7 +176,7 @@ body {
 
 @keyframes written_text  {
     100%{
-        color: var(--color-golden);
+        color: var(--color-darkgolden);
     }
 }
 
@@ -413,28 +459,35 @@ body {
 }
 
 .button-cta {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    max-width: 190px;
+    max-width: 386px;
     margin: 1rem 3rem;
     
-
-
+    
+    
 }
 
-.button-cta button {
+.button-cta a{
     display: inline-block;
     width: 100%;
     max-width: 172px;
-
+    
+    
     padding: 10px;
     margin: 3rem;
+
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     letter-spacing: .15rem;
+    text-align: center;
+
     border-radius: 10px;
     cursor: pointer;
     border-width: 1px;
-    border-color: var(--color-gold) ;
+    border-color: var(--color-golden);
+    text-decoration: none;
 
     background-color: var(--color-darkgolden);
     color: var(--color-white);
@@ -442,7 +495,7 @@ body {
     
 }
 
-.button-cta button:hover {
+.button-cta a:hover {
     transition: all .3s ease;
     filter: brightness(.8);
 }
@@ -484,14 +537,19 @@ body {
 .card-project {
     width: 300px;
     height: 430px;
+
     padding: 30px 20px 20px;
     margin: 0px 10px;
+
     background: var(--color-golden);
     color: var(--color-white);
+
     align-items: center;
     flex-direction: row;
+
     border-radius: 20px;
     position: relative;
+    
     z-index: 1;
 }
 
@@ -661,6 +719,25 @@ body {
     .contact-info a:hover{
         transition: color 0.3s ease;
         color: var(--color-darkgolden);
+    }
+    #footer{
+        height: 15vw;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        margin-top: auto;
+        background-color: var(--color-darkgolden);
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        color: var(--color-white);
     }
 /*fim da section contacts*/
 

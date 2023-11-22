@@ -1,3 +1,15 @@
+let header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY>= 200){
+        header.style.background= 'var(--color-darkgolden)';
+    }else{
+        header.style.background= 'transparent';
+    }
+})
+
+
+
 // Get a reference to the button
 const themeToggleBtn = document.getElementById('theme-toggle');
 

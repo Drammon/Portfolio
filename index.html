@@ -11,13 +11,36 @@
         </head>
         
         <body>
+            <section id="header">
+                <a class="header-title" href="/">
 
+                    <h1>D.RAMON</h1>
+
+                </a>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#person">Início</a>
+                        </li>
+                        <li>
+                            <a href="#about">Sobre mim</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contatos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </section>
            <section id="person">
                 <div class="person-content">
                     <div class="person-name">
                         <h1>Olá, <span></span></h1>
-                        <h1>Meu nome é <span></span></h1>
-                        <h1 data="Sobre mim">Ramon <span></span></h1>
+                        <h1 >Meu nome é <span></span></h1>
+                        <h1 data="Sobre mim"><a href="#about">Ramon </a><span></span></h1>
                         <button class="toggle-btn"id="theme-toggle">Modo Escuro</button>
                         <script src="script.js"></script>
                     </div>
@@ -108,47 +131,11 @@
                     <h4>Clique abaixo para realizar o download do meu <p>currículo</p>!</h4>
 
                     <div class="button-cta">
-                        <button>Currículo</button>
+                        <a href="/public/documents/CV-Ramon.pdf" download="CV-Ramon" aria-label="Baixar Currículo">Currículo</a>
                     </div>
 
                 </div>
-            </section>
-
-            <section id="about">
-                <div class="background-about">
-                    <class class="img-wrapper">
-                        <img src="./img/4421964.jpg" alt="pato">
-                    </class>
-                </div>
-
-
-
-                <div class="box-about">
-                    <div class="section-subtitle">
-                        <h2>
-                            <p>💻</p>
-                            <p><span>Desenvolvedor</span> Front-End</p>
-                        </h2>
-                    </div>
-
-                    <h3>
-                        Sou um Desenvolvedor Front-End com experiências em 
-
-                        <p><span>HTML, CSS, JavaScript e React</span></p>
-                    </h3>
-                    <h4>
-                        Olá, me chamo Ramon! Sou um Desenvolvedor de Sistemas recifense, multi-artista e curioso como um gato. Estudo linguagens de programação e há cerca de um ano atuo como
-                        Desenvolvedor Freelancer de websites para a internet. Atualmente busco oportunidades para minha primeira experiência de trabalho como Programador Júnior. 
-                        Quer saber mais sobre minhas experiências profissionais?
-                    </h4>
-                    <h4>Clique abaixo para realizar o download do meu <p>currículo</p>!</h4>
-
-                    <div class="button-cta">
-                        <button>Currículo</button>
-                    </div>
-
-                </div>
-            </section>
+            </section>        
 
             <section id="projects">
                 <div class="projects-title">
@@ -264,14 +251,20 @@
                         
                         <div class="contact-info">
                             <p> E-mail:</p>
-                            <a href="/">dayvidr.santos@gmail.com</a>
+                            <a href="mailto:dayvidr.santos@gmail.com">dayvidr.santos@gmail.com</a>
                         </div>
 
                     </div>
                 </div>
 
             </section>
-            
+            <section id="footer">
+                <div class="container-footer">
+                    <h2> Com esmero,
+                    </h2>
+                    <h3>Dayvid Ramon © 2023</h3>
+                </div>
+            </section>
     
             <!--section class="easter-egg">
                 <div class="about">
